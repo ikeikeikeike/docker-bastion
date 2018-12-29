@@ -8,3 +8,6 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
         redis-tools imagemagick libmagickwand-dev build-essential \
   && \
     rm -rf /var/lib/apt/lists/*
+
+ENV LC_ALL C.UTF-8
+ENV LANG   C.UTF-8
